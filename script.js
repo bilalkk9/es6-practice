@@ -51,20 +51,20 @@ console.log("Allah Hu Akbar");
 // *************************
 
 
-const dataList = [
-    {name:'bilal',age:23},
-    {name:'ali',age:24}
-];
+// const dataList = [
+//     {name:'bilal',age:23},
+//     {name:'ali',age:24}
+// ];
 
-function getData(){
-    setTimeout(()=>{
-        let output="";
-        dataList.forEach((data,index)=>{
-            output +=`<li>${data.name}</li>`;
-        })
-        document.body.innerHTML=output;
-    },1000);
-}
+// function getData(){
+//     setTimeout(()=>{
+//         let output="";
+//         dataList.forEach((data,index)=>{
+//             output +=`<li>${data.name}</li>`;
+//         })
+//         document.body.innerHTML=output;
+//     },1000);
+// }
 
 // getData();
 
@@ -80,18 +80,18 @@ function getData(){
 // createData({name:"hamza",age:21},getData);
 
 
-function createData(newData){
-    return new Promise((resolve,reject)=>{
-        setTimeout(() => {
-            dataList.push(newData);
-            let error=true;
-            if(!error){
-                resolve();
-            }else{
-                reject();
-            }
-        }, 1000);
-    })
-}
+// function createData(newData){
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(() => {
+//             dataList.push(newData);
+//             let error=true;
+//             if(!error){
+//                 resolve();
+//             }else{
+//                 reject();
+//             }
+//         }, 1000);
+//     })
+// }
 
-createData({name:"hamza",age:21}).then(getData).catch(err=>console.log(err));
+// createData({name:"hamza",age:21}).then(getData).catch(err=>console.log(err));
