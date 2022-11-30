@@ -1,4 +1,4 @@
-console.log("Allah Hu Akbar");
+// console.log("Allah Hu Akbar");
 
 // *********************
 //  JS Rest Parameter
@@ -95,3 +95,101 @@ console.log("Allah Hu Akbar");
 // }
 
 // createData({name:"hamza",age:21}).then(getData).catch(err=>console.log(err));
+
+
+
+let boys = [
+    {
+        name:'ali',
+        age:23
+    },
+    {
+        name:'asad',
+        age:24
+    },
+    {
+        name:'asim',
+        age:22
+    }
+];
+
+// For Loop
+
+// for(let i=0;i<boys.length;i++){
+//     boys[i].age=boys[i].age-10;
+// }
+// console.log(boys);
+
+
+// For Each
+
+// boys.forEach((boy)=>{
+//     boy.age=boy.age-10;
+// });
+// console.log(boys);
+
+
+// For Of
+
+// for(let boy of boys){
+//     boy.age=boy.age-10;
+// }
+// console.log(boys);
+
+
+// Filter
+
+// const filter = boys.filter((boy)=>{
+//     if(boy.age<24){
+//         return true;
+//     }
+// })
+// console.log(filter);
+
+
+// Short Way of filter
+
+// const filter= boys.filter((boy)=> boy.age<23);
+// console.log(filter)
+
+
+let users = [
+    {
+        fname:'ali',
+        lname:'khan',
+        salary:100
+    },
+    {
+        fname:'asad',
+        lname:'ali',
+        salary:150
+    },
+    {
+        fname:'asim',
+        lname:'ahmed',
+        salary:120
+    }
+];
+
+// Map
+
+// const map = users.map((user)=>{
+//     return {
+//         // fullname: user.fname +' '+ user.lname
+//         fullname: `${user.fname} ${user.lname}`
+//     };
+// })
+// console.log(map)
+
+
+// Reduce
+
+// const total = users.reduce((total,user)=>{
+//     total = total+user.salary;
+//     return total;
+// },0);
+// console.log(total);
+
+
+// Index Of
+
