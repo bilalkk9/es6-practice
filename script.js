@@ -257,3 +257,132 @@ let users = [
 // })
 
 // console.log(filter)
+
+
+// Map Exercise
+
+// 1) Make an array of numbers that are doubles of the first array
+
+// const doubleNumbers = [2, 5, 100];
+
+// let map = doubleNumbers.map((multiply)=>{
+//     return multiply*2;
+// })
+// console.log(map)
+
+// 2) Take an array of numbers and make them strings
+
+// const stringItUp = [2, 5, 100];
+
+// let map = stringItUp.map((up)=>{
+//     return up.toString();
+// })
+
+// console.log(map);
+
+// 3) Capitalize each of an array of names
+
+// const capitalizeNames = ["john", "JACOB", "jinGleHeimer", "schmidt"];
+
+// let map = capitalizeNames.map((caps)=>{
+//     // return caps.charAt(0).toUpperCase()+caps.slice(1);
+//     // return caps.toLowerCase();
+// })
+
+// console.log(map)
+
+// 4) Make an array of strings of the names
+
+// const namesOnly = [
+//     {
+//         name: "Angelina Jolie",
+//         age: 80
+//     },
+//     {
+//         name: "Eric Jones",
+//         age: 2
+//     },
+//     {
+//         name: "Paris Hilton",
+//         age: 5
+//     },
+//     {
+//         name: "Kayne West",
+//         age: 16
+//     },
+//     {
+//         name: "Bob Ziroll",
+//         age: 100
+//     }
+// ]
+
+// let map = namesOnly.map((names)=>{
+//     return names.name;
+// })
+
+// console.log(map)
+
+// 5) Make an array of strings of the names saying whether or not they can go to The Matrix
+
+// const makeStrings = [
+//     {
+//         name: "Angelina Jolie",
+//         age: 80
+//     },
+//     {
+//         name: "Eric Jones",
+//         age: 2
+//     },
+//     {
+//         name: "Paris Hilton",
+//         age: 5
+//     },
+//     {
+//         name: "Kayne West",
+//         age: 16
+//     },
+//     {
+//         name: "Bob Ziroll",
+//         age: 100
+//     }
+// ]
+
+// let map = makeStrings.map((matrix)=>{
+//     if(matrix.age < 18){
+//         return `${matrix.name} is under age!!`;
+//     }else{
+//         return `${matrix.name} can go to The Matrix`;
+//     }
+// })
+
+// console.log(map)
+
+// 6) Make an array of the names in h1s, and the ages in h2s
+
+// const readyToPutInTheDOM = [
+//     {
+//         name: "Angelina Jolie",
+//         age: 80
+//     },
+//     {
+//         name: "Eric Jones",
+//         age: 2
+//     },
+//     {
+//         name: "Paris Hilton",
+//         age: 5
+//     },
+//     {
+//         name: "Kayne West",
+//         age: 16
+//     },
+//     {
+//         name: "Bob Ziroll",
+//         age: 100
+//     }
+// ]
+
+// let map = readyToPutInTheDOM.map((ready)=>{
+//     return `<h1>${ready.name}</h1><h2>${ready.age}</h2>`;
+// })
+// console.log(map)
