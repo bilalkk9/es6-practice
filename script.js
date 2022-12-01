@@ -191,5 +191,69 @@ let users = [
 // console.log(total);
 
 
-// Index Of
+// Filter Exercise
 
+// 1) Given an array of numbers, return a new array that has only the numbers that are 5 or greater.
+
+// let numbers = [1,2,3,4,5,6,7,8,9];
+
+// const filter = numbers.filter((number)=>{
+//     return number >= 5;
+// })
+
+// console.log(filter)
+
+// 2) Given an array of numbers, return a new array that only includes the even numbers.
+
+// let numbers = [1,2,3,4,5,6,7,8,9];
+
+// let filter = numbers.filter((number)=>{
+//     return number % 2 == 0;
+// })
+// console.log(filter)
+
+// 3) Given an array of strings, return a new array that only includes those that are 5 characters or fewer in length
+
+// let fiveCharactersOrFewerOnly = ["dog", "wolf", "by", "family", "eaten", "camping"];
+
+// let filter = fiveCharactersOrFewerOnly.filter((fewer)=>{
+//     if(fewer.length<=5){
+//         return true;
+//     }
+// })
+// console.log(filter)
+
+// 4) Given an array of people objects, return a new array that has filtered out all those who don't belong to the club.
+
+// let peopleWhoBelongToTheIlluminati = [
+//     { name: "Angelina Jolie", member: true },
+//     { name: "Eric Jones", member: false },
+//     { name: "Paris Hilton", member: true },
+//     { name: "Kayne West", member: false },
+//     { name: "Bob Ziroll", member: true }
+// ]
+
+// let filter = peopleWhoBelongToTheIlluminati.filter((notIlluminati)=>{
+//     if(notIlluminati.member==true){
+//         return true;
+//     }
+// })
+
+// console.log(filter)
+
+
+// 5) Make a filtered list of all the people who are old enough to see The Matrix (older than 18)
+
+// let ofAge = [
+//     { name: "Angelina Jolie", age: 80 },
+//     { name: "Eric Jones", age: 2 },
+//     { name: "Paris Hilton", age: 5 },
+//     { name: "Kayne West", age: 16 },
+//     { name: "Bob Ziroll", age: 100 }
+// ]
+
+// let filter = ofAge.filter((matrix)=>{
+//     return matrix.age>18;
+// })
+
+// console.log(filter)
