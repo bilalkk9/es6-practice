@@ -98,20 +98,20 @@
 
 
 
-let boys = [
-    {
-        name:'ali',
-        age:23
-    },
-    {
-        name:'asad',
-        age:24
-    },
-    {
-        name:'asim',
-        age:22
-    }
-];
+// let boys = [
+//     {
+//         name:'ali',
+//         age:23
+//     },
+//     {
+//         name:'asad',
+//         age:24
+//     },
+//     {
+//         name:'asim',
+//         age:22
+//     }
+// ];
 
 // For Loop
 
@@ -153,23 +153,23 @@ let boys = [
 // console.log(filter)
 
 
-let users = [
-    {
-        fname:'ali',
-        lname:'khan',
-        salary:100
-    },
-    {
-        fname:'asad',
-        lname:'ali',
-        salary:150
-    },
-    {
-        fname:'asim',
-        lname:'ahmed',
-        salary:120
-    }
-];
+// let users = [
+//     {
+//         fname:'ali',
+//         lname:'khan',
+//         salary:100
+//     },
+//     {
+//         fname:'asad',
+//         lname:'ali',
+//         salary:150
+//     },
+//     {
+//         fname:'asim',
+//         lname:'ahmed',
+//         salary:120
+//     }
+// ];
 
 // Map
 
@@ -385,4 +385,102 @@ let users = [
 // let map = readyToPutInTheDOM.map((ready)=>{
 //     return `<h1>${ready.name}</h1><h2>${ready.age}</h2>`;
 // })
-// console.log(map)
+// console.log(map);
+
+
+// Reduce Exercise
+
+// 1) Turn an array of numbers into a total of all the numbers
+
+// const total = [1,2,3];
+
+// let reduce = total.reduce((acc,totals)=>{
+//     acc = acc+totals;
+//     return acc;
+// },0)
+
+// console.log(reduce)
+
+// 2) Turn an array of numbers into a long string of all those numbers.
+
+// const stringConcat = [1,2,3];
+
+// let reduce = stringConcat.reduce((acc,conc)=>{
+
+// })
+
+
+// Indexof
+
+// const admins = [1,2,3,4,5];
+
+// const user = {
+//     name: 'ali',
+//     id: 1
+// }
+
+// const index = admins.indexOf(user.id);
+
+// if(index>-1){
+//     console.log("This user has admin rights")
+// }else{
+//     console.log("This is simple user")
+// }
+
+// Includes
+
+// const admins = [1,2,3,4,5];
+
+// const user = {
+//     name: 'ali',
+//     id: 11
+// }
+
+// const includes = admins.includes(user.id);
+// console.log(includes)
+
+
+// Find
+
+// const users = [
+//     {
+//         name:'ali',
+//         id:1
+//     },
+//     {
+//         name:'asad',
+//         id:2
+//     },
+//     {
+//         name:'asim',
+//         id:3
+//     }
+// ];
+
+// const find = users.find((user)=>{
+//     if(user.id===2){
+//         return true;
+//     }else{
+//         return false;
+//     }
+// })
+
+// console.log(find)
+
+
+// Sort
+
+// const names = ['ali','shan','asim','usman','saad','hamza'];
+
+// const sort = names.sort();
+
+// console.log(sort)
+
+
+// Splice
+
+// const names = ['ali','shan','asim','usman','saad','hamza'];
+
+// names.splice(1,2);
+
+// console.log(names)
