@@ -484,3 +484,116 @@
 // names.splice(1,2);
 
 // console.log(names)
+
+
+// Asynchronous JavaScript
+
+// console.log('start');
+
+// setTimeout(function(){
+//     console.log('timeout function');
+// },3000);
+
+// console.log('End');
+
+
+// Callbacks
+
+// function register(callback){
+//     setTimeout(function(){
+//         console.log("User Registered.");
+//         callback();
+//     },3000);
+// }
+
+// function email(callback){
+//     setTimeout(function(){
+//         console.log("Registeration Email Sent.");
+//         callback();
+//     },2000);
+    
+// }
+
+// function getData(callback){ 
+//     setTimeout(function(){
+//         console.log("Got User Data.");
+//         callback();
+//     },1000);
+// }
+
+// function showData(){
+//     setTimeout(function(){
+//         console.log("User Data Displayed.");
+//     },5000);
+// }
+
+// register(()=>{
+//     email(()=>{
+//         getData(()=>{
+//             showData();
+//         });
+//     });
+// });
+
+// console.log("All Tasks Completed.");
+
+
+// Promise
+
+
+// function register(){
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(function(){
+//             console.log("User Registered.");
+//             resolve();
+//         },3000);
+//     })
+    
+// }
+
+// function email(){
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(function(){
+//             console.log("Registeration Email Sent.");
+//             resolve();
+//         },2000);
+//     })
+// }
+
+// function getData(){ 
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(function(){
+//             console.log("Got User Data.");
+//             resolve();
+//         },4000);
+//     })  
+// }
+
+// function showData(){
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(function(){
+//             console.log("User Data Displayed.");
+//             resolve();
+//         },5000);
+//     })
+    
+// }
+
+// register().then(email).then(getData).then(showData).catch((err)=>{
+//     console.log('Error: ',err)
+// });
+
+// console.log("All Tasks Completed.");
+
+
+// Async Await
+
+
+async function authenticate(){
+    await register();
+    await email();
+    await getData();
+    await showData();
+}
+
+authenticate();
