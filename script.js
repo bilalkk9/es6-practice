@@ -585,15 +585,63 @@
 
 // console.log("All Tasks Completed.");
 
-
+ 
 // Async Await
 
 
-async function authenticate(){
-    await register();
-    await email();
-    await getData();
-    await showData();
+// async function authenticate(){
+//     await register();
+//     await email();
+//     await getData();
+//     await showData();
+// }
+
+// authenticate();
+
+
+// Local Storage
+
+// localStorage.setItem('name','bilal');
+// localStorage.setItem('student','yes');
+// const get = localStorage.getItem('name');
+// console.log(get);
+// localStorage.removeItem('name');
+// localStorage.clear();
+
+
+// const user = {
+//   name:'bilal',
+//   color: 'brown',
+//   caste: 'kk'
+// }
+// const stringify = JSON.stringify(user);
+// localStorage.setItem('userInfo',stringify);
+
+// const parse = JSON.parse(localStorage.getItem('userInfo'));
+
+// console.log(parse.caste);
+
+
+const themeSelector = document.querySelector('#themeSelector');
+
+themeSelector.addEventListener('change',(e)=>{
+    localStorage.setItem('theme',e.target.value);
+    changeTheme(e.target.value);
+});
+
+function changeTheme(theme){
+  if(theme === 'dark'){
+    document.body.style.backgroundColor = '#333';
+  }else if(theme === 'light'){
+    document.body.style.backgroundColor = '#f1f1f1';
+  }else{
+    document.body.style.backgroundColor = '#fff';
+  }
 }
 
-authenticate();
+window.addEventListener('storage',(e)=>{
+  if(e.key === 'theme'){
+    changeTheme(e.newValue);
+    themeSelector.value = e.newValue;
+  }
+});
