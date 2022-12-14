@@ -622,26 +622,63 @@
 // console.log(parse.caste);
 
 
-const themeSelector = document.querySelector('#themeSelector');
+// const themeSelector = document.querySelector('#themeSelector');
 
-themeSelector.addEventListener('change',(e)=>{
-    localStorage.setItem('theme',e.target.value);
-    changeTheme(e.target.value);
-});
+// themeSelector.addEventListener('change',(e)=>{
+//     localStorage.setItem('theme',e.target.value);
+//     changeTheme(e.target.value);
+// });
 
-function changeTheme(theme){
-  if(theme === 'dark'){
-    document.body.style.backgroundColor = '#333';
-  }else if(theme === 'light'){
-    document.body.style.backgroundColor = '#f1f1f1';
-  }else{
-    document.body.style.backgroundColor = '#fff';
-  }
-}
+// function changeTheme(theme){
+//   if(theme === 'dark'){
+//     document.body.style.backgroundColor = '#333';
+//   }else if(theme === 'light'){
+//     document.body.style.backgroundColor = '#f1f1f1';
+//   }else{
+//     document.body.style.backgroundColor = '#fff';
+//   }
+// }
 
-window.addEventListener('storage',(e)=>{
-  if(e.key === 'theme'){
-    changeTheme(e.newValue);
-    themeSelector.value = e.newValue;
-  }
-});
+// window.addEventListener('storage',(e)=>{
+//   if(e.key === 'theme'){
+//     changeTheme(e.newValue);
+//     themeSelector.value = e.newValue;
+//   }
+// });
+
+
+// Destructuring
+
+// const user = {
+//   name: 'ali',
+//   id: 101
+// }
+
+// // const {name,id} = user;
+
+// const {name:userName} = user;
+
+// console.log(userName);
+
+// const data = ['ali',23,'warehouse'];
+
+// const[name,age,job] = data;
+
+// console.log(job);
+
+
+// Default Parameter
+
+
+// const user = (name,email,password='secret') => {
+//   // const pswd = password || 'secret';
+//   console.log(name,email,password);
+// }
+// user('bilal','bilal@gmail.com');
+
+
+// Spread
+
+const arr = ['ali','asad','amir','asim'];
+const newArr = ['asra',...arr];
+console.log(newArr);
